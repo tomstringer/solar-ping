@@ -1,1 +1,2 @@
-http://tutorials.jumpstartlab.com/projects/web_guesser.html
+- http://tutorials.jumpstartlab.com/projects/web_guesser.html
+- http://webapps-for-beginners.rubymonstas.org/sinatra.html
