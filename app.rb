@@ -14,7 +14,7 @@ get '/' do
 	jhash['meta'].each do |w|
 		title_tag = w[0]
 		info_item = w[1]
-		output << "<tr><td>#{status}</td><td></td></tr>"
+		output << "<tr><td>#{title_tag}</td><td>#{info_item}</td></tr>"
 	end
 
 	erb :index, :locals => {results: output}
