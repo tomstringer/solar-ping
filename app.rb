@@ -11,10 +11,10 @@ get '/' do
   jhash = JSON.parse(api_result)
   output = ''
 
-  jhash['meta'].each do |w|
-    title_tag = w[0]
+	jhash['meta'].each do |w|
+  	title_tag = w[0]
   	info_item = w[1]
-    output << "<tr><td>#{status}</td><td></td></tr>"
+  	output << "<tr><td>#{status}</td><td></td></tr>"
 	end
 
   erb :index, :locals => {results: output}
