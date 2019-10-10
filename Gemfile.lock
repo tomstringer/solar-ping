@@ -1,6 +1,7 @@
 GEM
   remote: http://rubygems.org/
   specs:
+    backports (3.8.0)
     domain_name (0.5.20190701)
       unf (>= 0.0.5, < 1.0.0)
     http-accept (1.7.0)
@@ -10,6 +11,7 @@ GEM
     mime-types (3.3)
       mime-types-data (~> 3.2015)
     mime-types-data (3.2019.0904)
+    multi_json (1.13.1)
     mustermann (1.0.3)
     netrc (0.11.0)
     rack (2.0.7)
@@ -27,6 +29,13 @@ GEM
       rack (~> 2.0)
       rack-protection (= 2.0.7)
       tilt (~> 2.0)
+    sinatra-contrib (2.0.7)
+      backports (>= 2.8.2)
+      multi_json
+      mustermann (~> 1.0)
+      rack-protection (= 2.0.7)
+      sinatra (= 2.0.7)
+      tilt (~> 2.0)
     tilt (2.0.10)
     unf (0.1.4)
       unf_ext
@@ -42,6 +51,7 @@ DEPENDENCIES
   rest-open-uri
   rubygems-update
   sinatra
+  sinatra-contrib
 
 BUNDLED WITH
    1.16.4
